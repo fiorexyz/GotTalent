@@ -29,7 +29,7 @@ Route::get('login',function () {
 
     return view('login');
 });
-
+/*
 Route::view('register', 'register', [
     'sub_categories' => SubCategory::All(),
 ]);
@@ -145,4 +145,4 @@ Route::post('profile', function () {
 Route::get('logout', function () {
     Auth::logout();
     return redirect('/');
-});
+});*/
