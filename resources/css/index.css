@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.login{
+    text-decoration: none;
+}
+
+.boton{
+
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 90px;
+    border-radius: 6px;
+    background-color: rgb(250, 241, 223);
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid rgb(240, 231, 213);;
+    margin-bottom: 40px;
+    z-index: 0;
+    font-weight: 500;
+}
+
+.boton::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: rgb(250, 241, 223);
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+.boton:hover{
+    background-color: rgb(216, 202, 183);
+    box-shadow: rgba(122, 108, 108, 0.2);
+    color: antiquewhite;
+}
+
+.nav{
+    background-color: rgb(252, 215, 4);
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link{
+    margin-left: 1.5rem;
+}
+.navbar-brand{
+    padding-top: 10px;
+
+}
+p{
+    padding-left: 40px;
+    font-size: 30px;
+}
+.navbar-nav{
+    min-height: 5rem;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.card{
+    border: transparent;
+    background-color: transparent;
+    width: 550px;
+    transition: all 0.25s;
+    text-align: justify;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h1{
+    text-align: center;
+    font-weight: 200;
+}
+
+.logoimg{
+    width: 150px;
+    height: 100px;
+    padding-left: 40px;
+}
+
+.img-fluid{
+    width: 900px;
+    float: left;
+    height: 500px;
+}
+
+.font-weight-bold{
+    text-align: justify;
+    font-size: 30px;
+    padding-top: 50px;
+
+}
+
+.parrafo{
+    font-size: medium;
+    text-align: center;
+
+
+}
+
+.parrafito{
+    font-size: 25px;
+}
+
+.tittle{
+    padding-top: 30px;
+    text-align: center;
+}
+.footito{
+    background-color:  rgb(252, 215, 4);
+    width: 100%;
+    height: 100px;
+
+}
+
+.cards{
+    padding-left: 100px;
+    display: flex;
+}
+
+.Abuelo{
+    display: flex;
+}
+
+.imagen_talento{
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.Card_padre{
+    padding-top: 25px;
+}
+
+.resumen{
+    font-size: 20px;
+}
+
+.personas{
+    font-size: 40px;
+}
+
+
+.imagenes{
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.imagenes:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.imagenes img{
+    width: 330px;
+    height: 220px;
+
+}
+.imagenes h4{
+    font-weight: 600;
+}
+.imagenes p{
+    padding: 0 1rem;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.parrafo2{
+    font-size: 25px;
+}
+
+h4{
+    padding-top: 50px;
+}
+
+/*responsivo*/
+
+.celular{
+    display: none;
+}
+
+menu{
+    display: flex;
+    list-style-type: none;
+}
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .nav{
+        background-color: rgb(13, 13, 70);
+        height: 80px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .nav{
+        background-color: rgb(13, 13, 70);
+        height: 150px;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    menu{
+        display: flex;
+        padding-left: 80px;
+    }
+    .navbar-brand{
+        padding-top: 10px;
+        text-align: center;
+        padding-left: 80px;
+    }
+
+
+    .card h1{
+        font-size: 20px;
+
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width
+*/
+
+
+
+

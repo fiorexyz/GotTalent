@@ -1,0 +1,120 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.seccion-perfil-usuario .perfil-usuario-body
+.seccion-perfil-usuario{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-perfil-usuario .perfil-usuario-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background: linear-gradient(90deg, rgb(99, 98, 110), transparent);
+    margin-bottom: 1.25rem;
+}
+
+
+
+.seccion-perfil-usuario .perfil-usuario-body{
+    width:70%;
+    position: relative;
+    max-width: 750px;
+}
+
+.seccion-perfil-usuario .perfil-usuario-body .titulo{
+    display: block;
+    width: 100%;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+.seccion-perfil-usuario .perfil-usuario-body .texto{
+    color: #848488;
+    font-size: 0.95rem;
+}
+.seccion-perfil-usuario .perfil-usuario-footer,
+.seccion-perfil-usuario .perfil-usuario-bio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 12px rgb(89, 88, 97);
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: text-top;
+
+    max-width: 100vw;
+}
+
+.seccion-perfil-usuario .perfil-usuario-bio{
+    margin: auto 5px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.seccion-perfil-usuario .perfil-usuario-bio .titulo,
+.seccion-perfil-usuario .perfil-usuario-bio .texto
+{
+    margin: 5px auto;
+}
+
+.perfil-usuario-motivacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px;
+}
+
+.boton-contactar{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: rgb(247, 247, 249);
+    background-color: #500d5d ;
+    height:50px;
+    width: 100px;
+    border-radius: 50px;
+
+}
+
+.img{
+    float: left;
+    width: 500px;
+    padding: 40px;
+}
+
+.motivaciones{
+    padding: 80px;
+}
+
+.text{
+    display: flex;
+}
+.lista{
+    list-style: none;
+    text-align: left;
+}
+
+.titulo{
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+
+.boton{
+    color: rgb(247, 247, 249);
+    background-color: rgb(252, 215, 4);;
+    height:50px;
+    width: 100px;
+    border-radius: 50px;
+    border-color:  srgb(252, 215, 4);;
+
+}

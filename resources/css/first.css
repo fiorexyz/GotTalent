@@ -1,0 +1,111 @@
+header{
+    display: flex;
+}
+
+.carousel-inner{
+    width: 1000px;
+    height: 500px;
+}
+
+.carousel-inner {
+    margin: 50px auto -50px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: 370px;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.d-block w-100{
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.logo{
+    display: flex;
+    padding-top: 15px;
+}
+
+.navbar-brand p{
+    color: white;
+    padding-left: 300px;
+}
+
+.boton{
+    padding-left: 150px;
+    padding-top: 15px;
+
+}
+
+.boton a {
+    text-decoration: none;
+}
+
+.boton1{
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 120px;
+    border-radius: 6px;
+    background-color: rgb(250, 241, 223);
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid rgb(240, 231, 213);;
+    z-index: 0;
+    font-weight: 500;
+}
+
+.boton1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: rgb(250, 241, 223);
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+.boton1:hover{
+    background-color: rgb(216, 202, 183);
+    box-shadow: rgba(122, 108, 108, 0.2);
+    color: antiquewhite;
+}
+
+
+
+.descripcion h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+.nav{
+    background-color: rgb(252, 215, 4);
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+
+}
+
+.navbar-brand{
+    padding-top: 10px;
+
+}
+p{
+    padding-left: 40px;
+    font-size: 30px;
+}
