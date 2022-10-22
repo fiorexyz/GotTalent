@@ -29,12 +29,16 @@ Route::get('login',function () {
 
     return view('login');
 });
-/*
-Route::view('register', 'register', [
-    'sub_categories' => SubCategory::All(),
-]);
 
-Route::view('first','first')->middleware('auth');
+Route::get('register', function() {
+    return view('register', [
+        'sub_categories' => SubCategory::All(),
+    ]);
+});
+
+Route::get('first', function() {
+    return view('first');
+})->middleware('auth');
 
 Route::get('profile1', function() {
     return view('profile1', [
@@ -49,21 +53,29 @@ Route::get('profile2/{user}', function (User $user) {
     ]);
 });
 
-Route::view('art', 'art', [
-    'users' => User::WhereRelation('sub_category', 'category_id', '2')->get(),
-]);
+Route::get('art', function() {
+    return view('art', [
+        'users' => User::WhereRelation('sub_category', 'category_id', '2')->get(),
+    ]);
+});
 
-Route::view('sports','sports', [
-    'users' => User::WhereRelation('sub_category', 'category_id', '1')->get(),
-]);
+Route::get('sports', function() {
+    return view('sports', [
+        'users' => User::WhereRelation('sub_category', 'category_id', '1')->get(),
+    ]);
+});
 
-Route::view('music', 'music', [
-    'users' => User::WhereRelation('sub_category', 'category_id', '3')->get(),
-]);
+Route::get('music', function() {
+    return view('music', [
+        'users' => User::WhereRelation('sub_category', 'category_id', '3')->get(),
+    ]);
+});
 
-Route::view('gastronomy','gastronomy', [
-    'users' => User::WhereRelation('sub_category', 'category_id', '4')->get(),
-]);
+Route::get('gastronomy', function() {
+    return view('gastronomy', [
+        'users' => User::WhereRelation('sub_category', 'category_id', '4')->get(),
+    ]);
+});
 
 Route::post('login', function () {
     $attributes = request()->validate([
@@ -145,4 +157,4 @@ Route::post('profile', function () {
 Route::get('logout', function () {
     Auth::logout();
     return redirect('/');
-});*/
+});
