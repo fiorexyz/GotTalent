@@ -18,13 +18,13 @@
     <!-- Encabezado de inicio -->
     <section class="header">
         <nav class="navbar navbar-expand-lg nav">
-            <a class="navbar-brand text-light" href="#"><span class="font-weight-bold"> <p>Superate! Got Talent</p></span></a>
+            <a class="navbar-brand text-light" href="#"><span class="font-weight-bold"> <p>¡Supérate! Got Talent</p></span></a>
             <ul class="navbar-nav align-self-center">
                 <menu><li class="nav-item active">
-                        <a class="nav-link text-light " href="{{ url('first') }}">Categories</a>
+                        
                     </li>
                     <li class="nav-item nav-link">
-                        <a href="{{ url('login') }}" class="login"> <button type="button" class="boton">Login</button>
+                        <a href="{{ url('login') }}" class="login"> <button type="button" class="boton">Log in</button>
                         </a>
                     </li>
                 </menu>
@@ -36,13 +36,13 @@
         <div class="Card_padre">
             <div class="card">
                 <h1>Why?</h1>
-                <p class="resumen">To help and support these students with talents, we created a web page
+                <p class="resumen">To help and support these talented students, we created a web page
                     where we intend to make their talents known. We have included their general information, what
                     they do, and how to contact them.</p>
             </div>
             <div class="card">
-                <h1>Purpose</h1>
-                <p class="resumen"> The main purpose of the web page is to show students information, to make use of their talents
+                <h1>For what?</h1>
+                <p class="resumen"> The main purpose of the web page is to show the students' information, to make use of their talents
                     through the ¡Supérate! program.</p>
                 <div class="celular" >
                     <img src="{{ asset('img/index/talentos 2.jpg') }}" class="imagen_celular" alt="">
@@ -58,8 +58,8 @@
             <h1 class="text-uppercase font-weight-bold mb-4 tittle ">Show your talent!</h1>
         </div>
         <div>
-            <p class="parrafito">If you have any type of talent and you want to demostrate it, Log in in our website.</div>
-        <p class="parrafo2">The differents categories are:</p>
+            <p class="parrafito">If you have any type of talent and you want to demostrate it, Log in to share it with others.</div>
+        <p class="parrafo2">Categories included in our website:</p>
         <section class="cards">
             <div class="imagenes">
                 <img src="{{ asset('img/index/deportes.jpg') }}" alt="">

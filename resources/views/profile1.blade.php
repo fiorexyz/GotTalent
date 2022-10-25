@@ -43,7 +43,7 @@
 
                     <p class="bg-light text-dark"></p>
                     <label class="col-xs-2 control-label">
-                        <p>Your name</p>
+                        <p>Full name</p>
                         <div class="col-sm-14">
                             <input type="text" class="form-control" id="inputName" value="{{ $user->name }}"
                                 disabled>
@@ -62,13 +62,13 @@
                                 value="{{ $user->age }}" disabled>
                         </div>
                         <label class="col-xs-2 control-label">
-                            <p>Insert your number phone</p>
+                            <p>Phone number </p>
                             <div class="col-sm-14">
                                 <input type="number" class="form-control" id="inputEmail"
                                     placeholder="Example: 45989867" name="phone" value="{{ $user->phone }}">
                             </div>
                             <label class="col-xs-2 control-label">
-                                <p>Centro superate</p>
+                                <p>Center ¡Supérate! you are in</p>
                                 <div class="col-sm-14">
                                     <input type="text" class="form-control" id="inputEmail"
                                         placeholder="Example: Centro Superate! Fundacion Poma" name="superate"
@@ -77,7 +77,7 @@
                             </label>
 
                             <label class="col-xs-2 control-label">
-                                <p>Tiempo practicando (en años)</p>
+                                <p>Time practicing (years)</p>
                                 <div class="col-sm-14">
                                     <input type="number" class="form-control" id="inputEmail" placeholder="Example: 1"
                                         name="timePracticing" value="{{ $user->timePracticing }}">

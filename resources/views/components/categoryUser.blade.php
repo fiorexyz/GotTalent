@@ -5,14 +5,15 @@
         <img src="{{ asset($user->image) }}" alt="">
     </div>
     <div class="card-content">
-        <p>Name: {{ $user->name }}</p>
-        <p>Age: {{ $user->age }}</p>
-        <p>Talent: {{ $user->sub_category->type }}</p>
-        <p>Proof of the talent: video (example)</p>
-        <p>Email: {{ $user->email }}</p>
-        <p>Organization: Superate {{ $user->superate }}</p>
+    <br>
+        <p> Student's name: {{ $user->name }}</p><br>
+        <p> Student's age: {{ $user->age }}</p><br>
+        <p> Student's talent: {{ $user->sub_category->type }}</p><br>
+        <p> Proof of the talent: video (example)</p><br>
+        <p> Student's email: {{ $user->email }}</p><br>
+        <p> Organization: ¡Supérate! {{ $user->superate }}</p><br>
         <br>
-        <p> DESCRIPTION AND MOTIVATION</p>
+        
 
         <br>
         <br>

@@ -26,10 +26,10 @@
                 <div class="text">
                     <ul class="lista">
                         <h1 class="titulo">{{ $user->name }}</h1>
-                        <h4 class="info">Student information :</h4>
+                        <h4 class="info">Student´s information:</h4>
                         <li>Age: {{ $user->age }}</li>
-                        <li>Superate: {{ $user->superate }}</li>
-                        <li>How much time have you been practing it:3 years
+                        <li>¡Supérate!: {{ $user->superate }}</li>
+                        <li>How much time have you been practicing it: 3 years
                         </li>
                         <li> Talent: {{ $user->sub_category->type }}</li>
 
@@ -48,7 +48,7 @@
                 </div>
                 <div>
                     <div class="motivaciones">
-                        <h2 class="card-title">Más de mi talento:</h2>
+                        <h2 class="card-title">More about my talent:</h2>
                         <p class="card-text">{{ $user->about }}</p>
 
                     </div>

@@ -21,9 +21,9 @@
             <div class="logo">
                 @auth
                 <div class="boton"><a href="{{ url('profile1') }}"><button type="button" class="boton1">Profile</button></a></div>
-                <div class="boton"><a href="{{ url('logout') }}"><button type="button" class="boton1">Logout</button></a></div>
+                <div class="boton"><a href="{{ url('logout') }}"><button type="button" class="boton1">Log out</button></a></div>
                 @endauth
-                <div class="navbar-brand"> <p>Superate! Got Talent</p> </div>
+                <div class="navbar-brand"> <p>¡Supérate! Got Talent</p> </div>
             </div>
         </header>
     </nav>
@@ -71,7 +71,9 @@
     </div>
 
     <div class="descripcion">
-        <h1>Click on the image with the name of the category you want to see</h1>
+        <h1>If you want to know more information about the categories, click on the image 
+            of the categorie you want to see.
+        </h1>
     </div>
 
 
