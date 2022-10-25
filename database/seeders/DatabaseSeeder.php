@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
             'age' => 16,
             'phone' => '74945003',
             'superate' => 'Fundacion Poma',
-            'sub_category_id' => 13,
+            'sub_category_id' => 12,
             'timePracticing' => 2,
             'about' => 'I really enjoy dancing because is when I forget all the bad stuff and
              concentrate on enjoying the moment. When I make mistakes I appreciate
@@ -48,7 +48,7 @@ class DatabaseSeeder extends Seeder
             'age' => 16,
             'phone' => '79014868',
             'superate' => 'Fundacion Poma',
-            'sub_category_id' => 15,
+            'sub_category_id' => 14,
             'timePracticing' => 2,
             'about' => 'I learnt baking with my grandmother'
         ]);
@@ -59,7 +59,7 @@ class DatabaseSeeder extends Seeder
             'age' => 17,
             'phone' => '79546348',
             'superate' => 'Fundacion Poma',
-            'sub_category_id' => 12,
+            'sub_category_id' => 11,
             'timePracticing' => 3,
             'about' => 'I like to play the piano when I am bored or when I am really stressed'
         ]);
@@ -70,7 +70,7 @@ class DatabaseSeeder extends Seeder
             'age' => 16,
             'phone' => '74309748',
             'superate' => 'Fundacion Poma',
-            'sub_category_id' => 6,
+            'sub_category_id' => 10,
             'timePracticing' => 2,
             'about' => 'When I am singing I feel like I am living'
         ]);
@@ -81,7 +81,7 @@ class DatabaseSeeder extends Seeder
             'age' => 16,
             'phone' => '74947514',
             'superate' => 'Fundacion Poma',
-            'sub_category_id' => 14,
+            'sub_category_id' => 13,
             'timePracticing' => 1,
             'about' => 'I love cooking because I can be creative on that'
         ]);
@@ -143,53 +143,48 @@ class DatabaseSeeder extends Seeder
             'category_id' => 2,
             'type' => 'Drawing'
         ]);
-        //ID 6
-        SubCategory::factory()->create([
-            'category_id' => 2,
-            'type' => 'Singing'
-        ]);
 
-        //ID 7
+        //ID 6
         SubCategory::factory()->create([
             'category_id' => 2,
             'type' => 'Fotography'
         ]);
-        //ID 8
+        //ID 7
         SubCategory::factory()->create([
             'category_id' => 2,
             'type' => 'Poetry'
         ]);
-        //ID 9
+        //ID 8
         SubCategory::factory()->create([
             'category_id' => 2,
             'type' => 'Performance'
         ]);
-        //ID 10
+        //ID 9
         SubCategory::factory()->create([
             'category_id' => 2,
             'type' => 'Crochet'
         ]);
-        //ID 11
+        //ID 10
         SubCategory::factory()->create([
             'category_id' => 3,
             'type' => 'Singing'
         ]);
-        //ID 12
+        //ID 11
         SubCategory::factory()->create([
             'category_id' => 3,
-            'type' => 'Play an instrument'
+            'type' => 'Playing an instrument'
         ]);
-        //ID 13
+        //ID 12
         SubCategory::factory()->create([
             'category_id' => 3,
             'type' => 'Dancing'
         ]);
-        //ID 14
+        //ID 13
         SubCategory::factory()->create([
             'category_id' => 4,
             'type' => 'Cooking'
         ]);
-        //ID 15
+        //ID 14
         SubCategory::factory()->create([
             'category_id' => 4,
             'type' => 'Baking'

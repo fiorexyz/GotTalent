@@ -18,9 +18,9 @@
 </div>
 
 <div class="talents">
-    <button>SING</button>
-    <button>INSTRUMENTS</button>
-    <button>DANCE</button>
+    <button>SINGING</button>
+    <button>PLAYING INSTRUMENTS</button>
+    <button>DANCING</button>
 
 
 </div>

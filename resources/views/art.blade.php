@@ -18,12 +18,12 @@
 </div>
 
 <div class="talents">
-    <button>CROCHÉ</button>
+    <button>CROCHET</button>
     <button>DRAWING</button>
     <button>PAINTING</button>
-    <button>PHOTOS</button>
+    <button>PHOTOGRAPHY</button>
     <button>POETRY</button>
-    <button>ACTING</button>
+    <button>PERFORMANCE</button>
 
 </div>
 @foreach($users as $user)
