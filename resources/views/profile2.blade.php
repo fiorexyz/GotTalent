@@ -27,11 +27,11 @@
                     <ul class="lista">
                         <h1 class="titulo">{{ $user->name }}</h1>
                         <h4 class="info">Student´s information:</h4>
-                        <li>Age: {{ $user->age }}</li>
+                        <li>Student's age: {{ $user->age }}</li>
                         <li>¡Supérate!: {{ $user->superate }}</li>
-                        <li>How much time have you been practicing it: 3 years
+                        <li>Student's time practicing: 3 years
                         </li>
-                        <li> Talent: {{ $user->sub_category->type }}</li>
+                        <li>Student's talent: {{ $user->sub_category->type }}</li>
 
                     </ul>
                     <div>

@@ -11,12 +11,9 @@
         <p> Student's talent: {{ $user->sub_category->type }}</p><br>
         <p> Proof of the talent: video (example)</p><br>
         <p> Student's email: {{ $user->email }}</p><br>
-        <p> Organization: ¡Supérate! {{ $user->superate }}</p><br>
-        <br>
+        <p> Organization: ¡Supérate! {{ $user->superate }}</p>
         
-
-        <br>
-        <br>
+        
         <div class="button">
             <button onclick="location.href='{{ url("/profile2/$user->id") }}'" type="button">more</button>
 
