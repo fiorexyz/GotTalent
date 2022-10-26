@@ -17,7 +17,7 @@
 
 <body>
     <div id="cabecera" class="form">
-        <h2>¡Supérate! Got Talent</h2>
+        <h2>Superate! Got Talent</h2>
     </div>
     <div id="principal" class="seccion">
         <h2>Form</h2>
