@@ -21,7 +21,7 @@
             <a class="navbar-brand text-light" href="#"><span class="font-weight-bold"> <p>¡Supérate! Got Talent</p></span></a>
             <ul class="navbar-nav align-self-center">
                 <menu><li class="nav-item active">
-                        
+
                     </li>
                     <li class="nav-item nav-link">
                         <a href="{{ url('login') }}" class="login"> <button type="button" class="boton">Log in</button>

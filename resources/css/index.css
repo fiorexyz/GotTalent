@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
+
 }
 
 .login {
@@ -149,6 +150,8 @@ p {
     padding-top: 25px;
 }
 
+
+
 .Card_padre {
     padding-top: 25px;
 }
@@ -228,8 +231,8 @@ menu {
 
     .header {
         height: 200px;
-        background-color: rgb(252, 215, 4);
-        width: 485px;
+        background-color: #ffc300;
+        width: 100%;
     }
 
     .nav-link {
@@ -239,7 +242,7 @@ menu {
 
     .navbar-brand {
         padding-top: 10px;
-        margin-left: 50px;
+        margin-left: 15px;
     }
 
     p {
@@ -304,9 +307,9 @@ menu {
     }
 
     .footito {
-        background-color: rgb(252, 215, 4);
+        background-color: #ffc300;
         width: 100%;
-        height: 100px;
+        height: 100%;
 
     }
 
