@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
+    background: linear-gradient(to right, #ffffff, #e3c8d3);
 
 }
 
@@ -50,7 +51,7 @@ body {
 }
 
 .nav {
-    background-color: rgb(252, 215, 4);
+    background-color: #581845;
     height: 80px;
     width: 100%;
     top: 0;
@@ -71,7 +72,9 @@ body {
 p {
     padding-left: 40px;
     font-size: 30px;
+
 }
+
 
 .navbar-nav {
     min-height: 5rem;
@@ -94,17 +97,6 @@ p {
     font-weight: 200;
 }
 
-.logoimg {
-    width: 150px;
-    height: 100px;
-    padding-left: 40px;
-}
-
-.img-fluid {
-    width: 900px;
-    float: left;
-    height: 500px;
-}
 
 .font-weight-bold {
     text-align: justify;
@@ -130,7 +122,7 @@ p {
 }
 
 .footito {
-    background-color: rgb(252, 215, 4);
+    background-color: #581845;
     width: 100%;
     height: 100px;
 
@@ -141,9 +133,7 @@ p {
     display: flex;
 }
 
-.Abuelo {
-    display: flex;
-}
+
 
 .imagen_talento {
     padding-left: 50px;
@@ -154,6 +144,7 @@ p {
 
 .Card_padre {
     padding-top: 25px;
+   margin-left: 260px;
 }
 
 .resumen {
@@ -174,6 +165,7 @@ p {
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
+    background-color: white;
 }
 
 .imagenes:hover {

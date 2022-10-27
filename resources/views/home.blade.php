@@ -49,9 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="imagen_talento">
-            <img src="{{ asset('img/index/talentos 2.jpg') }}" class="img-fluid" alt="img"/>
-        </div>
+
     </section>
     <div class="parrafo">
         <div>
