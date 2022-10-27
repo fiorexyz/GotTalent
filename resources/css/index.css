@@ -1,18 +1,18 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Oswald', sans-serif;
 }
 
-.login{
+.login {
     text-decoration: none;
 }
 
-.boton{
+.boton {
 
     position: relative;
     display: block;
@@ -23,13 +23,14 @@ body{
     font-size: 18px;
     overflow: hidden;
     transition: all 500ms ease;
-    border: 2px solid rgb(240, 231, 213);;
+    border: 2px solid rgb(240, 231, 213);
+    ;
     margin-bottom: 40px;
     z-index: 0;
     font-weight: 500;
 }
 
-.boton::before{
+.boton::before {
     content: "";
     position: absolute;
     left: 0;
@@ -41,13 +42,13 @@ body{
     z-index: -1;
 }
 
-.boton:hover{
+.boton:hover {
     background-color: rgb(216, 202, 183);
     box-shadow: rgba(122, 108, 108, 0.2);
     color: antiquewhite;
 }
 
-.nav{
+.nav {
     background-color: rgb(252, 215, 4);
     height: 80px;
     width: 100%;
@@ -57,24 +58,27 @@ body{
     justify-content: space-between;
 }
 
-.nav-link{
+.nav-link {
     margin-left: 1.5rem;
 }
-.navbar-brand{
+
+.navbar-brand {
     padding-top: 10px;
 
 }
-p{
+
+p {
     padding-left: 40px;
     font-size: 30px;
 }
-.navbar-nav{
+
+.navbar-nav {
     min-height: 5rem;
     font-size: 20px;
     padding-top: 30px;
 }
 
-.card{
+.card {
     border: transparent;
     background-color: transparent;
     width: 550px;
@@ -84,80 +88,81 @@ p{
     overflow: hidden;
 }
 
-.card h1{
+.card h1 {
     text-align: center;
     font-weight: 200;
 }
 
-.logoimg{
+.logoimg {
     width: 150px;
     height: 100px;
     padding-left: 40px;
 }
 
-.img-fluid{
+.img-fluid {
     width: 900px;
     float: left;
     height: 500px;
 }
 
-.font-weight-bold{
+.font-weight-bold {
     text-align: justify;
     font-size: 30px;
     padding-top: 50px;
 
 }
 
-.parrafo{
+.parrafo {
     font-size: medium;
     text-align: center;
 
 
 }
 
-.parrafito{
+.parrafito {
     font-size: 25px;
 }
 
-.tittle{
+.tittle {
     padding-top: 30px;
     text-align: center;
 }
-.footito{
-    background-color:  rgb(252, 215, 4);
+
+.footito {
+    background-color: rgb(252, 215, 4);
     width: 100%;
     height: 100px;
 
 }
 
-.cards{
+.cards {
     padding-left: 100px;
     display: flex;
 }
 
-.Abuelo{
+.Abuelo {
     display: flex;
 }
 
-.imagen_talento{
+.imagen_talento {
     padding-left: 50px;
     padding-top: 25px;
 }
 
-.Card_padre{
+.Card_padre {
     padding-top: 25px;
 }
 
-.resumen{
+.resumen {
     font-size: 20px;
 }
 
-.personas{
+.personas {
     font-size: 40px;
 }
 
 
-.imagenes{
+.imagenes {
     width: 250px;
     height: 350px;
     border-radius: 8px;
@@ -168,40 +173,43 @@ p{
     transition: all 0.25s;
 }
 
-.imagenes:hover{
+.imagenes:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-.imagenes img{
+
+.imagenes img {
     width: 330px;
     height: 220px;
 
 }
-.imagenes h4{
+
+.imagenes h4 {
     font-weight: 600;
 }
-.imagenes p{
+
+.imagenes p {
     padding: 0 1rem;
     font-size: 20px;
     font-weight: 600;
 
 }
 
-.parrafo2{
+.parrafo2 {
     font-size: 25px;
 }
 
-h4{
+h4 {
     padding-top: 50px;
 }
 
 /*responsivo*/
 
-.celular{
+.celular {
     display: none;
 }
 
-menu{
+menu {
     display: flex;
     list-style-type: none;
 }
@@ -209,8 +217,8 @@ menu{
 
 
 /* For mobile phones: */
-@media screen and (max-width: 500px){
-    .nav{
+@media screen and (max-width: 576px) {
+    .nav {
         width: 100%;
         top: 0;
         left: 0;
@@ -218,31 +226,34 @@ menu{
         justify-content: space-between;
     }
 
-    .header{
+    .header {
         height: 200px;
         background-color: rgb(252, 215, 4);
         width: 485px;
     }
 
-    .nav-link{
+    .nav-link {
         margin-left: 100px;
 
     }
-    .navbar-brand{
+
+    .navbar-brand {
         padding-top: 10px;
         margin-left: 50px;
     }
-    p{
+
+    p {
         padding-left: 50px;
         font-size: 30px;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         min-height: 5rem;
         font-size: 20px;
         padding-top: 30px;
     }
 
-    .card{
+    .card {
         border: transparent;
         background-color: transparent;
         width: 450px;
@@ -252,71 +263,72 @@ menu{
         overflow: hidden;
     }
 
-    .card h1{
+    .card h1 {
         text-align: center;
         font-weight: 200;
     }
 
-    .logoimg{
+    .logoimg {
         width: 150px;
         height: 100px;
         padding-left: 40px;
     }
 
-    .img-fluid{
+    .img-fluid {
         width: 900px;
         float: left;
         height: 500px;
     }
 
-    .font-weight-bold{
+    .font-weight-bold {
         text-align: justify;
         font-size: 30px;
         padding-top: 50px;
 
     }
 
-    .parrafo{
+    .parrafo {
         font-size: medium;
         text-align: center;
 
 
     }
 
-    .parrafito{
+    .parrafito {
         font-size: 25px;
     }
 
-    .tittle{
+    .tittle {
         padding-top: 30px;
         text-align: center;
     }
-    .footito{
-        background-color:  rgb(252, 215, 4);
+
+    .footito {
+        background-color: rgb(252, 215, 4);
         width: 100%;
         height: 100px;
 
     }
 
-    .cards{
-      display: inline-block;
+    .cards {
+        display: inline-block;
 
     }
 
-    .Card_padre{
+    .Card_padre {
         padding-top: 25px;
     }
 
-    .resumen{
+    .resumen {
         font-size: 20px;
     }
 
-    .personas{
+    .personas {
         font-size: 40px;
     }
 
 
-    .imagenes{
+    .imagenes {
         width: 250px;
         height: 350px;
         border-radius: 8px;
@@ -327,30 +339,33 @@ menu{
         transition: all 0.25s;
     }
 
-    .imagenes:hover{
+    .imagenes:hover {
         transform: translateY(-15px);
         box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
     }
-    .imagenes img{
+
+    .imagenes img {
         width: 330px;
         height: 220px;
 
     }
-    .imagenes h4{
+
+    .imagenes h4 {
         font-weight: 600;
     }
-    .imagenes p{
+
+    .imagenes p {
         padding: 0 1rem;
         font-size: 20px;
         font-weight: 600;
 
     }
 
-    .parrafo2{
+    .parrafo2 {
         font-size: 25px;
     }
 
-    h4{
+    h4 {
         padding-top: 50px;
     }
 
