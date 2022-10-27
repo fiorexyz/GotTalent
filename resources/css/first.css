@@ -102,11 +102,11 @@ header{
 }
 
 .navbar-brand{
-    padding-top: 20px;
+    padding-top: center;
+    padding-left: 450px;
 
 }
 p{
     padding-left: 40px;
-    font-size: 30px;
-        
+    font-size: 30px;        
 }
