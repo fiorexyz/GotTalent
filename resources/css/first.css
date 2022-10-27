@@ -39,7 +39,7 @@ header{
 }
 
 .boton{
-    padding-left: 150px;
+    padding-left: 15px;
     padding-top: 15px;
 
 }
@@ -102,10 +102,11 @@ header{
 }
 
 .navbar-brand{
-    padding-top: 10px;
+    padding-top: 20px;
 
 }
 p{
     padding-left: 40px;
     font-size: 30px;
+        
 }
