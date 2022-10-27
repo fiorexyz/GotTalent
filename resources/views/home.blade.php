@@ -49,8 +49,8 @@
                 </div>
             </div>
         </div>
-
     </section>
+
     <div class="parrafo">
         <div>
             <h1 class="text-uppercase font-weight-bold mb-4 tittle ">Show your talent!</h1>
