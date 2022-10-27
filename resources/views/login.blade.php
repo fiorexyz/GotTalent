@@ -14,14 +14,13 @@
 <div class="formulario">
     <h1>Log in</h1>
     <form method="post">
-        @csrf
         <div class="username">
             <input type="email" name="email" required>
-            <label>Email</label>
+            
         </div>
         <div class="username">
             <input type="password" name="password" required>
-            <label>Password</label>
+            
 
         </div>
         <div class="recordar">¿Forgot your password?</div>
