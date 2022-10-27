@@ -1,9 +1,10 @@
 body {
 
     margin: 0;
-    padding: 0;
+    padding: 6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url("fondo.jpeg");
+    background-image: url("log in.jpeg");
+    height: 100vh;
 }
 
 
