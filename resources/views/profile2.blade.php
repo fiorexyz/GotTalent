@@ -6,7 +6,7 @@
                     <div class="card mb-3 border-0 rounded-4 shadow-eb py-4">
                         <div class="row g-0">
                             <div class="col-sm-12 offset-sm-12 col-md-3 offset-md-1 d-flex align-items-center">
-                                <img src="{{ asset($user->image) }}" style="width: 100%" class="p-4">
+                                <img src="{{ asset($user->image) }}" style="width: 100%" class="p-2 rounded-4">
                             </div>
                             <div class="col-sm-12 offset-sm-12 col-md-7 offset-md-1">
                                 <div class="card-body h-100 py-0">
@@ -24,11 +24,11 @@
                                         </span>
                                         <div class="row justify-content-center">
                                             <div class="col-6">
-                                                <img src="{{ asset($user->talent_images[0]) }}" class="w-100">
+                                                <img src="{{ asset($user->talent_images[0]) }}" class="w-100 rounded-4">
                                             </div>
                                             @if (isset($user->talent_images[1]))
                                                 <div class="col-6">
-                                                    <img src="{{ asset($user->talent_images[1]) }}" class="w-100">
+                                                    <img src="{{ asset($user->talent_images[1]) }}" class="w-100 rounded-4">
                                                 </div>
                                             @endif
                                         </div>

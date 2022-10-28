@@ -13,9 +13,9 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="h-100">
     <x-navbar />
-    <div class="margin-navbar">
+    <div class="margin-navbar h-100">
         {{ $slot }}
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

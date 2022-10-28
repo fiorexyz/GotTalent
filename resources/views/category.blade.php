@@ -14,7 +14,7 @@
                         <div class="card mb-3 border-0 rounded-4 shadow-eb py-3">
                             <div class="row g-0">
                                 <div class="col-sm-12 offset-sm-12 col-md-3 offset-md-1 d-flex align-items-center">
-                                    <img src="{{ asset($user->image) }}" style="width: 100%" class="p-4">
+                                    <img src="{{ asset($user->image) }}" style="width: 100%" class="p-2 rounded-4">
                                 </div>
                                 <div class="col-sm-12 offset-sm-12 col-md-7 offset-md-1">
                                     <div class="card-body h-100 py-0">
@@ -27,7 +27,7 @@
                                                 Organization: {{ $user->superate }} <br>
                                             </span>
                                             <div class="col-12 d-flex justify-content-end">
-                                                <a class="btn btn-primary blue-color"
+                                                <a class="btn btn-primary purple-color"
                                                     href="{{ url("profile2/$user->id") }}" role="button">See more</a>
                                             </div>
                                         </div>

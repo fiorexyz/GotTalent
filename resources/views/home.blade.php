@@ -28,11 +28,11 @@
             </div>
         </div>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-3 mb-4">
             @foreach ($categories as $category)
                 <div class="col">
                     <div class="card shadow-eb transition" style="height: 100%;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="{{ asset("img/home/$category->type.jpg") }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center fw-semibold">{{ $category->type }}</h5>
                         </div>

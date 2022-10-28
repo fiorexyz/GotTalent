@@ -5,7 +5,7 @@
                 <h1>Registration Form</h1>
             </div>
 
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-12 offset-0 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
                     <form action="{{ url('register') }}" method="POST">
                         @csrf
@@ -39,7 +39,7 @@
                                         @endforeach
                                     </select>
                                 </div>
-                                <input type="submit" class="btn btn-primary w-100 blue-color rounded-4 p-2 mt-3"
+                                <input type="submit" class="btn btn-primary w-100 purple-color rounded-4 p-2 mt-3"
                                     value="Register">
                                 <input type="reset" class="btn btn-primary w-100 grey-color rounded-4 p-2 mt-3"
                                     value="Reset form">

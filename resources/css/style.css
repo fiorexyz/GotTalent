@@ -1,11 +1,34 @@
-body {
-    font-family: 'Oswald', sans-serif;
-    background: linear-gradient(to right, #ffffff, #e3c8d3);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffffff, #e3c8d3);
+    min-height: 100vh;
 }
 
 .navbar {
     background-color: #581845 !important;
+}
+
+.login {
+    position: fixed;
+    /* The image used */
+    background-image: url("../img/login.jpg");
+
+    /* Add the blur effect */
+    filter: brightness(0.75) blur(8px);
+
+    /* Full height */
+    height: 100vh;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-content{
+    z-index: 20;
 }
 
 .text-justify {
@@ -31,6 +54,15 @@ body {
 
 .blue-color:hover{
     background-color: #28568d !important;
+}
+
+.purple-color{
+    border-color: #581845 !important;
+    background-color: #581845 !important;
+}
+
+.purple-color:hover{
+    background-color: #942974 !important;
 }
 
 .grey-color{
@@ -73,7 +105,7 @@ body {
 }
 
 .margin-navbar{
-    margin-top: calc(82px + 1.5rem);
+    padding-top: calc(82px);
 }
 
 .noRound{
@@ -84,11 +116,11 @@ body {
 
 @media screen and (max-width: 576px) {
     .margin-navbar{
-        margin-top: calc(102.86px + 1.5rem);
+        padding-top: calc(71.36px);
     }
 
     .vertical-center{
         min-height: calc(100% - (102.86px + 1.5rem));
-    min-height: calc(100vh - (102.86px + 1.5rem));
+        min-height: calc(100vh - (102.86px + 1.5rem));
     }
 }
