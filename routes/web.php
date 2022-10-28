@@ -1,10 +1,12 @@
 <?php
 
 use App\Models\User;
+use App\Models\Category;
 use App\Models\SubCategory;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Validation\ValidationException;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,12 +21,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     Artisan::call('storage:link');
-    return view('home');
+    return view('home', [
+        'categories' => Category::All()
+    ]);
 });
 
 Route::get('login',function () {
     if (Auth::check()){
-        return redirect('first');
+        return redirect('categories');
     }
 
     return view('login');
@@ -36,9 +40,16 @@ Route::get('register', function() {
     ]);
 });
 
-Route::get('first', function() {
-    return view('first');
+Route::get('categories', function() {
+    return view('categories');
 })->middleware('auth');
+
+Route::get('category/{category}', function(Category $category) {
+    return view('category', [
+        'category' => $category,
+        'users' => User::WhereRelation('sub_category', 'category_id', $category->id)->get(),
+    ]);
+});
 
 Route::get('profile1', function() {
     return view('profile1', [
@@ -50,30 +61,6 @@ Route::get('profile1', function() {
 Route::get('profile2/{user}', function (User $user) {
     return view('profile2', [
         'user' => $user,
-    ]);
-});
-
-Route::get('art', function() {
-    return view('art', [
-        'users' => User::WhereRelation('sub_category', 'category_id', '2')->get(),
-    ]);
-});
-
-Route::get('sports', function() {
-    return view('sports', [
-        'users' => User::WhereRelation('sub_category', 'category_id', '1')->get(),
-    ]);
-});
-
-Route::get('music', function() {
-    return view('music', [
-        'users' => User::WhereRelation('sub_category', 'category_id', '3')->get(),
-    ]);
-});
-
-Route::get('gastronomy', function() {
-    return view('gastronomy', [
-        'users' => User::WhereRelation('sub_category', 'category_id', '4')->get(),
     ]);
 });
 
@@ -90,7 +77,7 @@ Route::post('login', function () {
     }
 
     session()->regenerate();
-    return redirect('/first');
+    return redirect('/categories');
 });
 
 
@@ -109,13 +96,13 @@ Route::post('register', function () {
     }
 
     if(strtolower($domain) != "poma.superate.org.sv"){
-        return back();
+        return back()->with('NOPOMA', 'Only superate poma students can get registered');
     }
 
     $user = User::create($attributes);
 
     Auth::login($user);
-    return redirect('/first');
+    return redirect('/categories');
 });
 
 Route::post('profile', function () {
@@ -151,7 +138,7 @@ Route::post('profile', function () {
         }
     }
 
-    return redirect('first');
+    return redirect('categories');
 });
 
 Route::get('logout', function () {
