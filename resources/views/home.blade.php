@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div class="row mb-3">
+        <div class="row mb-4">
             <div class="col-12 text-center">
                 <h1 class="fw-semibold">SHOW YOUR TALENT!</h1>
                 <h4>If you have any type of talent and you want to demostrate it, Log in to share it with others.</h4>

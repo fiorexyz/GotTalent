@@ -1,138 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <link rel="stylesheet" href="{{ asset('css/perfil1.css') }}">
-</head>
-
-<body>
-
-    <div class="jumbotron text-center">
-
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <p class="bg-light text-dark"></p>
-                <p class="bg-light text-dark"></p>
-                <p class="bg-light text-dark"></p>
-                <p class="bg-light text-dark"></p>
-                <div class="jumbotron">
-                    <form class="form-horizontal" method="POST" action="{{ url('profile') }}" enctype="multipart/form-data">
-                        @csrf
-                        <p>Photo
-                            <input type="file" name="image" accept="image/png, .jpeg, .jpg, image/gif">
-                        </p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <p class="bg-light text-dark"></p>
-                <p class="bg-light text-dark"></p>
-                <p class="bg-light text-dark"></p>
-                <p class="bg-light text-dark"></p>
-                <div class="form-group">
-
-                    <p class="bg-light text-dark"></p>
-                    <label class="col-xs-2 control-label">
-                        <p>Full name</p>
-                        <div class="col-sm-14">
-                            <input type="text" class="form-control" id="inputName" value="{{ $user->name }}"
-                                disabled>
-                        </div>
-                </div>
-                <label class="col-xs-2 control-label">
-                    <p>Email</p>
-                    <div class="col-sm-14">
-                        <input type="email" class="form-control" id="inputEmail"
-                            placeholder="Example: ... 202#@poma.superate.org.sv" value="{{ $user->email }}" disabled>
-                    </div>
-                    <label class="col-xs-2 control-label">
-                        <p>Age</p>
-                        <div class="col-sm-14">
-                            <input type="number" class="form-control" id="inputEmail" placeholder="Example: 17"
-                                value="{{ $user->age }}" disabled>
-                        </div>
-                        <label class="col-xs-2 control-label">
-                            <p>Phone number </p>
-                            <div class="col-sm-14">
-                                <input type="number" class="form-control" id="inputEmail"
-                                    placeholder="Example: 45989867" name="phone" value="{{ $user->phone }}">
-                            </div>
-                            <label class="col-xs-2 control-label">
-                                <p>Center ¡Supérate! you are in</p>
-                                <div class="col-sm-14">
-                                    <input type="text" class="form-control" id="inputEmail"
-                                        placeholder="Example: Centro Superate! Fundacion Poma" name="superate"
-                                        value="{{ $user->superate }}">
-                                </div>
-                            </label>
-
-                            <label class="col-xs-2 control-label">
-                                <p>Time practicing (years)</p>
-                                <div class="col-sm-14">
-                                    <input type="number" class="form-control" id="inputEmail" placeholder="Example: 1"
-                                        name="timePracticing" value="{{ $user->timePracticing }}">
-                                </div>
-                            </label>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-4">
-                    <p class="bg-light text-dark"></p>
-                    <p class="bg-light text-dark"></p>
-                    <p class="bg-light text-dark"></p>
-                    <p class="bg-light text-dark"></p>
-
-                    <div class="form-group">
-                        <p>More about your talent:</p>
-                        <textarea name="about" cols="35" rows="7">{{ $user->about }}</textarea>
-                        <label class="col-xs-2 control-label">
-                            <p>Multimedia of you talent</p>
-                            <div class="col-xs-3">
-                                <input type="file" name="talentIMG[]" size="80" />
-                            </div>
-
-                            <div class="form-group">
-                                <div class="col-sm-12 has-feedback">
-                                    <p class="bg-light text-dark"></p>
-
-                                    <label for="" class="control-label">Categories</label>
-                                    <select name="sub_category_id" class="form-control" multiple>
-                                        @foreach ($sub_categories as $sub_category)
-                                            <option value="{{ $sub_category->id }}"
-                                                @if ($user->sub_category_id == $sub_category->id) selected @endif>
-                                                {{ $sub_category->category->type }} - {{ $sub_category->type }}
-                                            </option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<x-body>
+    <div class="jumbotron vertical-center">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="col-sm-4">
-                        <input class="btn btn-primary" type="submit" value="Submit">
+            <div class="row text-center mb-3">
+                <h1>Profile Form</h1>
+            </div>
+            <form action="{{ url('/profile') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="col-12 card border-0 transparent-75 shadow-eb mb-4 py-3">
+                    <div class="row mb-3">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div style="width: 300px; height: 300px;">
+                                <div class="image-modify d-flex align-items-end justify-content-end position-absolute"
+                                    onclick="clickImageInput()">✎</div>
+                                <div style="width: 300px; height: 300px;"
+                                    class="image-preview d-flex align-items-center justify-content-center rounded-3">
+                                    <img id="image-preview" class="avatar position-absolute"
+                                        src="{{ $user->image }}" />
+                                </div>
+                            </div>
+                        </div>
+                        <input class="visually-hidden" type="file" id="avatar" name="image"
+                            accept="image/png, image/jpeg" onchange="loadImage(event)">
+                    </div>
+                    <div class="row">
+                        <x-input2 type="text" name="name" label="Full name" placeholder="John Doe"
+                            value="{{ $user->name }}" :disabled="true" />
+                        <x-input2 type="email" name="email" label="Email" placeholder="example@domain.com"
+                            value="{{ $user->email }}" :disabled="true" />
+                        <x-input2 type="number" name="age" label="Age" placeholder="15"
+                            value="{{ $user->age }}" :disabled="true" />
+                        <x-input2 type="text" name="phone" label="Phone number" placeholder="12345678"
+                            value="{{ $user->phone }}" :required="true" />
+                        <x-input2 type="text" name="superate" label="¡Supérate! center you are in"
+                            placeholder="Fundacion Poma" value="{{ $user->superate }}" :required="true" />
+                        <x-input2 type="number" name="timePracticing" label="Time practicing (years)" placeholder="2"
+                            value="{{ $user->timePracticing }}" :required="true" />
+                        <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4 h-auto">
+                            <div class="input-group px-2 h-auto">
+                                <span class="input-group-text col-12 col-md-auto">More about your talent</span>
+                                <textarea class="form-control" style="height: 100px;" aria-label="With textarea" name="about">{{ $user->about }}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4 h-auto">
+                            <div class="input-group">
+                                <label class="input-group-text" for="inputGroupFile01">Images about your talent (Max 2
+                                    images)</label>
+                                <input type="file" class="form-control" id="inputGroupFile01"
+                                    accept="image/png, image/jpeg" name="talentIMG[]" multiple>
+                            </div>
+                        </div>
+                        <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4">
+                            <h4 class="card-title text-center mb-2">Category</h4>
+                            <select name="sub_category_id" class="form-control" multiple required>
+                                @foreach ($sub_categories as $sub_category)
+                                    <option value="{{ $sub_category->id }}"
+                                        @if ($user->sub_category_id == $sub_category->id) selected @endif>
+                                        {{ $sub_category->category->type }}
+                                        - {{ $sub_category->type }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4">
+                            <input type="submit" class="btn btn-primary w-100 purple-color rounded-4 p-2 mt-3"
+                                value="Update profile">
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
+            @if ($errors->any())
+                {{ implode('', $errors->all('<div>:message</div>')) }}
+            @endif
         </div>
-        </form>
-    </div>
-    </div>
-    </div>
 
-</body>
+        <script>
+            var loadImage = function(event) {
+                var output = document.getElementById('image-preview');
+                output.src = URL.createObjectURL(event.target.files[0]);
+                output.onload = function() {
+                    URL.revokeObjectURL(output.src)
+                }
+            };
 
-</html>
+            function clickImageInput() {
+                document.getElementById('avatar').click();
+            }
+        </script>
+</x-body>

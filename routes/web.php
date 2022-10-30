@@ -132,7 +132,7 @@ Route::post('profile', function () {
         foreach (request()->file('talentIMG') as $image) {
             $image->storeAs('talent pic', "$user->id-$counter.jpg", 'public');
             $counter++;
-            if ($counter >= 2) {
+            if ($counter > 2) {
                 break;
             }
         }

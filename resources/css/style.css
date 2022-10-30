@@ -105,7 +105,7 @@ body {
 }
 
 .margin-navbar{
-    padding-top: calc(82px);
+    padding-top: calc(82px + 1.5rem);
 }
 
 .noRound{
@@ -114,9 +114,28 @@ body {
     border-top-left-radius: 0 !important;
 }
 
+.image-modify{
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.image-preview{
+    background-color: rgb(88, 24, 69, 0.50);
+}
+
+#image-preview{
+    max-width: 300px;
+    max-height: 300px;
+    z-index: 1;
+}
+
 @media screen and (max-width: 576px) {
     .margin-navbar{
-        padding-top: calc(71.36px);
+        padding-top: calc(71.36px + 1.5rem);
     }
 
     .vertical-center{
