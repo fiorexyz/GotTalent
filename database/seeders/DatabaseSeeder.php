@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
             'superate' => 'Fundacion Poma',
             'sub_category_id' => 5,
             'timePracticing' => 4,
-            'about' => 'I do drawing because when I was a child I discovered that it was my 
+            'about' => 'I do drawing because when I was a child I discovered that it was my
             safe place and it makes me happy.'
         ]);
 
@@ -81,7 +81,7 @@ class DatabaseSeeder extends Seeder
             'age' => 16,
             'phone' => '74947514',
             'superate' => 'Fundacion Poma',
-            'sub_category_id' => 13,
+            'sub_category_id' => 4,
             'timePracticing' => 1,
             'about' => 'I love cooking because I can be creative on that'
         ]);
@@ -97,7 +97,7 @@ class DatabaseSeeder extends Seeder
             'about' => 'I practice this sport because it helps me to have a better concentration
             and body movement.'
         ]);
-        
+
         //ID: 1
         Category::factory()->create([
             'type' => 'Sports'
