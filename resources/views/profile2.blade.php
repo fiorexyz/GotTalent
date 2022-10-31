@@ -23,7 +23,7 @@
                                             <br><br>
                                         </span>
                                         <div class="row justify-content-center">
-                                            <div class="col-6">
+                                            <div class="@if (isset($user->talent_images[1])) col-6 @else col-12 @endif">
                                                 <img src="{{ asset($user->talent_images[0]) }}" class="w-100 rounded-4">
                                             </div>
                                             @if (isset($user->talent_images[1]))
