@@ -72,6 +72,7 @@ return [
     'links' => [
         public_path('css') => base_path('resources/css'),
         public_path('img') => base_path('resources/img'),
+        public_path('js') => base_path('resources/js'),
     ],
 
 ];
