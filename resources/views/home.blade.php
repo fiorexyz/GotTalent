@@ -31,13 +31,14 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-3 mb-4">
             @foreach ($categories as $category)
                 <div class="col">
-                    <div class="card shadow-eb transition" style="height: 100%;">
+                    <div class="card shadow-eb transition" style="height: 100%;" onclick="show('{{ $category->type }}')">
                         <img src="{{ asset("img/home/$category->type.jpg") }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center fw-semibold">{{ $category->type }}</h5>
                         </div>
                     </div>
                 </div>
+                <x-floatingCard :category="$category"/>
             @endforeach
         </div>
     </div>

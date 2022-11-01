@@ -133,6 +133,50 @@ body {
     z-index: 1;
 }
 
+.card-div{
+    width: auto;
+    height: auto;
+    position: fixed !important;
+    z-index: 999999999999;
+}
+
+.QR-background {
+    width: 120%;
+    height: 110%;
+    top: -5%;
+    left: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed !important;
+    z-index: 999999999999;
+    overflow-x:hidden;
+}
+
+.card-QR{
+    position: relative !important;
+    display: inline-block;
+    max-width: 500px;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.QR-image{
+    width: 85%;
+    margin-left: calc((100% - 85%)/2);
+}
+
+.QR-image svg{
+    width: 100%;
+    height: auto;
+}
+
+.bg-pinky{
+    background-color: #e3c8d3;
+}
+
 @media screen and (max-width: 576px) {
     .margin-navbar{
         padding-top: calc(71.36px + 1.5rem);
