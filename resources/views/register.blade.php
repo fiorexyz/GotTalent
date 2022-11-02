@@ -32,7 +32,7 @@
                                 <h2 class="card-title text-center mb-2">Talent Categories</h2>
                                 <hr>
                                 <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4">
-                                    <select name="sub_category_id" class="form-control" multiple required>
+                                    <select name="sub_category_id" class="form-control" required>
                                         @foreach ($sub_categories as $sub_category)
                                             <option value="{{ $sub_category->id }}">{{ $sub_category->category->type }}
                                                 - {{ $sub_category->type }}</option>

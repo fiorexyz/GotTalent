@@ -100,22 +100,26 @@ class DatabaseSeeder extends Seeder
 
         //ID: 1
         Category::factory()->create([
-            'type' => 'Sports'
+            'type' => 'Sports',
+            'about' => 'Playing a sport is good for physical and mental health, distracting the body and exercising it does the same for the mind, it is very effective to achieve a stronger physical development, just as it can serve for the social and emotional field.'
         ]);
 
         //ID: 2
         Category::factory()->create([
-            'type' => 'Art'
+            'type' => 'Art',
+            'about' => 'Art is expressing emotions through different ways and making them known can be through drawings, paintings, music, poems or crafts, it is a beautiful way to give a vision of the world, whether real or imaginary.'
         ]);
 
         //ID: 3
         Category::factory()->create([
-            'type' => 'Music'
+            'type' => 'Music',
+            'about' => 'Millions of feelings are also expressed through music, music tells stories or makes us identify through its lyrics, whether playing an instrument, dancing or singing, feeling music is a very beautiful way to spend time and be distracted.'
         ]);
 
         //ID: 4
         Category::factory()->create([
-            'type' => 'Gastronomy'
+            'type' => 'Gastronomy',
+            'about' => 'Gastronomy is preparing delicious food. Gastronomy is a set of knowledge and practices related to culinary art, recipes, ingredients, techniques and methods, in each culture there are different types of food and that is why we consider it a talent, not everyone is good at it.'
         ]);
 
         //ID: 1
