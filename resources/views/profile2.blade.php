@@ -18,7 +18,7 @@
                                             Talent: {{ $user->sub_category->type }} <br>
                                             Time practicing: {{ $user->timePracticing }} years<br>
                                             Email: {{ $user->email }} <br>
-                                            Organization: {{ $user->superate }} <br><br>
+                                            <Center></Center>: {{ $user->superate }} <br><br>
                                             <h5>More about my talent:</h5>
                                             {{ $user->about }}
                                             <br><br>
