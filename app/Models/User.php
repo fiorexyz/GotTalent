@@ -34,7 +34,8 @@ class User extends Authenticatable
 
     protected $appends = [
         'image',
-        'talent_images'
+        'talent_images',
+        'talent_video'
     ];
 
     /**
@@ -74,6 +75,14 @@ class User extends Authenticatable
             $images->push(url('talent pic/placeholder.png'));
         }
         return $images;
+    }
+
+    public function getTalentVideoAttribute(){
+        if(Storage::disk('public')->exists("talent video/$this->id.mp4")){
+            return "talent video/$this->id.mp4";
+        }
+
+        return null;
     }
 
     public function sub_category(){

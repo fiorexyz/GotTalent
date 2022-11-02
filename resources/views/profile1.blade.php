@@ -42,11 +42,22 @@
                             </div>
                         </div>
                         <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4 h-auto">
-                            <div class="input-group">
+                            <div class="form-check form-switch d-flex justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick="changeTalentInput()">
+                                <label class="form-check-label ms-2" for="flexSwitchCheckDefault">Upload video instead of images</label>
+                              </div>
+
+                            <div class="input-group" id="talentIMG">
                                 <label class="input-group-text" for="inputGroupFile01">Images about your talent (Max 2
                                     images)</label>
                                 <input type="file" class="form-control" id="inputGroupFile01"
                                     accept="image/png, image/jpeg" name="talentIMG[]" multiple>
+                            </div>
+
+                            <div class="input-group" id="talentVIDEO" style="display: none;">
+                                <label class="input-group-text" for="inputGroupFile01">Video about your talent (Only MP4 videos)</label>
+                                <input type="file" class="form-control" id="inputGroupFile01"
+                                    accept="video/mp4" name="talentVIDEO">
                             </div>
                         </div>
                         <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4">

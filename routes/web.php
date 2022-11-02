@@ -127,7 +127,9 @@ Route::post('profile', function () {
         request()->file('image')->storeAs('profile pic', "$user->id.jpg", 'public');
     }
 
-    if (request()->hasFile('talentIMG')) {
+    if(request()->hasFile('talentVIDEO')){
+        request()->file('talentVIDEO')->storeAs('talent video', "$user->id.mp4", 'public');
+    } else if (request()->hasFile('talentIMG')) {
         $counter = 1;
         foreach (request()->file('talentIMG') as $image) {
             $image->storeAs('talent pic', "$user->id-$counter.jpg", 'public');
