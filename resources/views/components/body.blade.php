@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/png">
-    <title>Document</title>
+    <title>¡Supérate! Got Talent</title>
 </head>
 
 <body class="h-100">

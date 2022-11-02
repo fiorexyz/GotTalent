@@ -13,10 +13,10 @@
                     <div class="col-10 offset-1">
                         <div class="card mb-3 border-0 rounded-4 shadow-eb py-3">
                             <div class="row g-0">
-                                <div class="col-sm-12 offset-sm-12 col-md-3 offset-md-1 d-flex align-items-center">
+                                <div class="col-sm-12 offset-sm-12 col-md-4 offset-md-0 d-flex align-items-center p-3">
                                     <img src="{{ asset($user->image) }}" style="width: 100%" class="p-2 rounded-4">
                                 </div>
-                                <div class="col-sm-12 offset-sm-12 col-md-7 offset-md-1">
+                                <div class="col-sm-12 offset-sm-12 col-md-8 offset-md-0">
                                     <div class="card-body h-100 py-0">
                                         <div class="row h-100 d-flex align-items-center">
                                             <h4 class="card-title">{{ $user->name }}</h4>
