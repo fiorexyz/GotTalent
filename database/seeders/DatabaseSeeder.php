@@ -48,7 +48,7 @@ class DatabaseSeeder extends Seeder
             'age' => 16,
             'phone' => '79014868',
             'superate' => 'Fundacion Poma',
-            'sub_category_id' => 14,
+            'sub_category_id' => 4,
             'timePracticing' => 2,
             'about' => 'I learnt baking with my grandmother'
         ]);
