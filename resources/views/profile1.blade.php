@@ -77,7 +77,7 @@
 
                         <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4">
                             @if ($errors->any())
-                                {{ implode('', $errors->all('<div>:message</div>')) }}
+                                {!! implode('', $errors->all('<div class="text-danger">:message</div>')) !!}
                             @endif
                             <input type="submit" class="btn btn-primary w-100 purple-color rounded-4 p-2 mt-3"
                                 value="Update profile">
@@ -85,9 +85,6 @@
                     </div>
                 </div>
             </form>
-            @if ($errors->any())
-                {{ implode('', $errors->all('<div>:message</div>')) }}
-            @endif
         </div>
 
         <script>
