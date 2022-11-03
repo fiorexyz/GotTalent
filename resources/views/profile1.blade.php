@@ -38,14 +38,16 @@
                         <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4 h-auto">
                             <div class="input-group px-2 h-auto">
                                 <span class="input-group-text col-12 col-md-auto">More about your talent</span>
-                                <textarea class="form-control" style="height: 100px;" aria-label="With textarea" name="about">{{ $user->about }}</textarea>
+                                <textarea class="form-control" style="height: 100px;" aria-label="With textarea" name="about" required>{{ $user->about }}</textarea>
                             </div>
                         </div>
                         <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4 h-auto">
                             <div class="form-check form-switch d-flex justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick="changeTalentInput()">
-                                <label class="form-check-label ms-2" for="flexSwitchCheckDefault">Upload video instead of images</label>
-                              </div>
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" onclick="changeTalentInput()">
+                                <label class="form-check-label ms-2" for="flexSwitchCheckDefault">Upload video instead
+                                    of images</label>
+                            </div>
 
                             <div class="input-group" id="talentIMG">
                                 <label class="input-group-text" for="inputGroupFile01">Images about your talent (Max 2
@@ -55,9 +57,10 @@
                             </div>
 
                             <div class="input-group" id="talentVIDEO" style="display: none;">
-                                <label class="input-group-text" for="inputGroupFile01">Video about your talent (Only MP4 videos)</label>
-                                <input type="file" class="form-control" id="inputGroupFile01"
-                                    accept="video/mp4" name="talentVIDEO">
+                                <label class="input-group-text" for="inputGroupFile01">Video about your talent (Only MP4
+                                    videos)</label>
+                                <input type="file" class="form-control" id="inputGroupFile01" accept="video/mp4"
+                                    name="talentVIDEO">
                             </div>
                         </div>
                         <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4">
@@ -73,6 +76,9 @@
                         </div>
 
                         <div class="col-12 offset-0 col-sm-10 offset-sm-1 pt-2 mb-4">
+                            @if ($errors->any())
+                                {{ implode('', $errors->all('<div>:message</div>')) }}
+                            @endif
                             <input type="submit" class="btn btn-primary w-100 purple-color rounded-4 p-2 mt-3"
                                 value="Update profile">
                         </div>
