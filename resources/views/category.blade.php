@@ -24,7 +24,7 @@
                                                 Age: {{ $user->age }} <br>
                                                 Talent: {{ $user->sub_category->type }} <br>
                                                 Email: {{ $user->email }} <br>
-                                                Organization: {{ $user->superate }} <br>
+                                                Center: {{ $user->superate }} <br>
                                             </span>
                                             <div class="col-12 d-flex justify-content-end">
                                                 <a class="btn btn-primary purple-color"
